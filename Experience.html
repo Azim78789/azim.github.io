@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+        background: linear-gradient(90deg,  #1E3A8A, #3B82F6, #93C5FD); /* Gradien terang */
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambah bayangan */
+    }
+    header h1 {
+        font-size: 2.5em; /* Besarkan font */
+        margin: 0;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Tambah bayangan pada teks */
+        font-family: 'Poppins', sans-serif; /* Gunakan font moden */
+        font-weight: bold;
+        animation: glowing 3s infinite; /* Animasi kilauan */
+    }
+
+    /* Animasi Header */
+@keyframes glowing {
+    0% { 
+        text-shadow: 0 0 5px #00FFFF, 0 0 10px #1E90FF, 0 0 15px #87CEEB; 
+    }
+    50% { 
+        text-shadow: 0 0 20px #00FFFF, 0 0 30px #1E90FF, 0 0 40px #87CEEB; 
+    }
+    100% { 
+        text-shadow: 0 0 5px #00FFFF, 0 0 10px #1E90FF, 0 0 15px #87CEEB; 
+    }
+}
+
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4A90E2;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .custom-list {
+            list-style: none; /* Buang bullet hitam */
+            padding: 0;
+        }
+
+        .custom-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .custom-list li img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .map {
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <marquee style="font-size: 2.5em; font-family: 'Poppins', sans-serif; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); animation: glowing 3s infinite;">
+        <b>My Experience Internship at Kolej Komuniti Jasin</b>
+    </marquee>
+</header>
+
+
+    <div class="container">
+        <h2>Internship Experience</h2>
+        <p>
+            I have undergone industrial training at Kolej Komuniti Jasin for 2 months in the Unit Hubungan Korporat dan Komunikasi. During this period, I have been involved in several tasks such as:
+        </p>
+        <ul class="custom-list">
+            <li>
+                <img src="pin.png" alt="Pin Icon">
+                Updating Kolej Komuniti Jasin bulletin every day.
+            </li>
+            <li>
+                <img src="pin.png" alt="Pin Icon">
+                Making posters for special days such as Malaysia National Day, Malaysia Day, and Maulidur Rasul.
+            </li>
+            <li>
+                <img src="pin.png" alt="Pin Icon">
+                Creating promotional slides for the college.
+            </li>
+            <li>
+                <img src="pin.png" alt="Pin Icon">
+                Designing new student matric cards.
+            </li>
+        </ul>
+
+        <h2>Location</h2>
+        <div class="map">
+            <!-- Google Maps embed -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.781481898931!2d102.42801681481998!3d2.140195953115322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1ea7bc7faec5f%3A0xadb5a1b94cd5676b!2sJasin%20Community%20College!5e0!3m2!1sen!2smy!4v1700658923005!5m2!1sen!2smy" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="test4.html" style="
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #4A90E2;
+                color: white;
+                text-decoration: none;
+                font-size: 1em;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                transition: background-color 0.3s, transform 0.2s;
+            " 
+            onmouseover="this.style.backgroundColor='#357ABD'; this.style.transform='scale(1.05)';"
+            onmouseout="this.style.backgroundColor='#4A90E2'; this.style.transform='scale(1)';">
+                Back to Main Page
+            </a>
+        </div>
+    </div>
+</body>
+</html>

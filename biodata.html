@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Azim</title>
+   <style>
+    /* General Settings */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('background5.jpg'); /* Replace with your image file path */
+        background-size: cover; /* Make sure the image covers the entire background */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed; /* Keeps the background fixed while scrolling */
+        background-color: #f5f5f5; /* Fallback color if image doesn't load */
+        position: relative; /* Position for the button */
+    }
+
+        /* Header Design */
+        header {
+        background: linear-gradient(90deg,  #1E3A8A, #3B82F6, #93C5FD); /* Gradien terang */
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Tambah bayangan */
+    }
+    header h1 {
+        font-size: 2.5em; /* Besarkan font */
+        margin: 0;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Tambah bayangan pada teks */
+        font-family: 'Poppins', sans-serif; /* Gunakan font moden */
+        font-weight: bold;
+        animation: glowing 3s infinite; /* Animasi kilauan */
+    }
+
+    /* Animasi Header */
+@keyframes glowing {
+    0% { 
+        text-shadow: 0 0 5px #00FFFF, 0 0 10px #1E90FF, 0 0 15px #87CEEB; 
+    }
+    50% { 
+        text-shadow: 0 0 20px #00FFFF, 0 0 30px #1E90FF, 0 0 40px #87CEEB; 
+    }
+    100% { 
+        text-shadow: 0 0 5px #00FFFF, 0 0 10px #1E90FF, 0 0 15px #87CEEB; 
+    }
+}
+
+
+        /* Biodata Section */
+        .biodata-container {
+            background: #ffffff;
+            margin: 20px;
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #333;
+            margin-bottom: 20px;
+        }
+        .biodata-container h2 {
+            color: #4A90E2;
+            margin: 10px 0;
+        }
+        .biodata-info table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .biodata-info th,
+        .biodata-info td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .biodata-info th {
+            background-color: #4A90E2;
+            color: white;
+            text-align: center;
+        }
+        /* Back Button */
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4A90E2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #357ABD;
+        }
+        /* Navigation Button */
+        .nav-button {
+            position: absolute;
+            top: 120px;  /* Adjust the distance from the top */
+            right: 220px; /* Adjust the distance from the right */
+            padding: 10px 20px;
+            background-color: #357ABD;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #4A90E2;
+        }
+        /* Ordered List Styling */
+        .list-style {
+            margin: 0;
+            padding: 0 0 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><marquee>Azim's Biodata</marquee></h1>
+    </header>
+
+    <!-- Navigation Button to Additional Information -->
+    <button class="nav-button" onclick="location.href='#additional-info'"> Additional Information</button>
+
+    <div class="biodata-container">
+        <img src="profilepicture.jpg" alt="Azim's Profile Picture" class="profile-picture"> <!-- Replace with your image file -->
+
+        <h2>Welcome to My Biodata Page</h2>
+
+        <div class="biodata-info">
+            <table>
+                <tr>
+                    <th>Information</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Full Name</td>
+                    <td>Azimuddin bin Mohd Husaini</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>20 Years</td>
+                </tr>
+                <tr>
+                    <td>University</td>
+                    <td>Universiti Teknologi MARA (UiTM)</td>
+                </tr>
+                <tr>
+                    <td>Faculty</td>
+                    <td>Faculty of Computing, Informatics, and Mathematics</td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <ol class="list-style">
+                            <li>Reading</li>
+                            <li>Writing</li>
+                            <li>Hiking</li>
+                            <li>Playing Games</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favorite Foods</td>
+                    <td>
+                        <ol class="list-style">
+                            <li>Nasi Lemak</li>
+                            <li>Ice Cream</li>
+                            <li>Fried Rice</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ambition</td>
+                    <td>Programmer</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>emelazim18@gmail.com</td> <!-- Replace with your real email -->
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>010-446 1841</td>
+                </tr>
+            </table>
+
+            <!-- Additional Information Section (ID Added) -->
+            <div id="additional-info">
+                <h3 style="color: #4A90E2; margin-top: 30px;">Additional Information</h3>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                        <td>
+                            <ul class="list-style">
+                                <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+                                <li>HTML, CSS, PHP</li>
+                                <li>Graphic Design (Canva, Photoshop)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Languages</td>
+                        <td>
+                            <ul class="list-style">
+                                <li>Bahasa Melayu (Native)</li>
+                                <li>English (Fluent)</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Soft Skills</td>
+                        <td>
+                            <ul class="list-style">
+                                <li>Teamwork</li>
+                                <li>Communication</li>
+                                <li>Critical Thinking</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index1.html'">Back to Main Page</button>
+    </div>
+
+</body>
+</html>                                 
